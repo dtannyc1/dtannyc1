@@ -6,7 +6,7 @@ I'm David, welcome to my GitHub page:
 - 💬 Ask me about Mechanical Engineering! While I don't work in the field anymore, I still love everything I learned about it
 - 👯 I’m looking to collaborate on your pet project. The goofier, the better.
 - 😄 Pronouns: He/Him
-- 🎸 Fun Fact: I play guitar and sing in my down time, music is truly the best therapy
+- 🎸 Fun Fact: I play guitar and sing in my down time. Music truly is the best therapy
 
   
 <!--
