@@ -3054,45 +3054,31 @@ input, select, textarea {
 				}
 
 		@media screen and (max-width: 980px) {
-
 			.features article {
-				margin: 1em 2em 1em 0;
-				width: calc(50% - 2em);
-                /* width: calc(100% - 1em); */
+				margin: 1em 1em 1em 1em;
+				width: calc(25% - 2em);
 			}
+		}
 
-            .features article:nth-child(3n) {
-				margin-right: 1.75em;
+        @media screen and (max-width: 850px) {
+			.features article {
+				margin: 1em 1em 1em 1em;
+				width: calc(33% - 2em);
 			}
-
-            .features article:nth-child(2n) {
-				margin-right: 0;
-			}
-
 		}
 
 		@media screen and (max-width: 736px) {
 
 			.features article {
-				padding: 1.5em 1.5em 0.1em 1.5em ;
-				margin: 0.875em 1.75em 0.875em 0;
 				width: calc(50% - 2em);
 			}
 
-            .features article:nth-child(3n) {
-				margin-right: 1.75em;
-			}
-
-            .features article:nth-child(2n) {
-				margin-right: 0;
-			}
-
-				.features article .image {
+				/* .features article .image {
 					margin-bottom: 1.5em;
 					margin-left: -1.5em;
 					margin-top: -1.5em;
 					width: calc(100% + 3em);
-				}
+				} */
 
 		}
 
