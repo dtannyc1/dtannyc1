@@ -3012,10 +3012,10 @@ input, select, textarea {
 			background-color: #353849;
 			border-radius: 5px;
 			margin: 1.5em 3em 1.5em 0;
-			width: calc(50% - 1.5em);
+			width: calc(33% - 3em);
 		}
 
-			.features article:nth-child(2n) {
+			.features article:nth-child(3n) {
 				margin-right: 0;
 			}
 
@@ -3038,7 +3038,8 @@ input, select, textarea {
 
 			.features article {
 				margin: 1em 2em 1em 0;
-				width: calc(50% - 1em);
+				width: calc(50% - 2em);
+                /* width: calc(100% - 1em); */
 			}
 
 		}
@@ -3048,7 +3049,7 @@ input, select, textarea {
 			.features article {
 				padding: 1.5em 1.5em 0.1em 1.5em ;
 				margin: 0.875em 1.75em 0.875em 0;
-				width: calc(50% - 0.875em - 1px);
+				width: calc(50% - 2em);
 			}
 
 				.features article .image {
@@ -3060,7 +3061,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 480px) {
+		@media screen and (max-width: 540px) {
 
 			.features {
 				display: block;
