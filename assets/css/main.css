@@ -3029,6 +3029,16 @@ input, select, textarea {
             align-items: center;
 		}
 
+        .features article.education a.image img{
+            /* width: none; */
+            height: 200px;
+            border-radius: 0;
+        }
+
+        .features article.education p {
+            margin-bottom: 0;
+        }
+
         .features article h3 {
             padding: 0;
             margin: 0;
@@ -3045,7 +3055,7 @@ input, select, textarea {
 				border-radius: 5px 5px 0 0;
 				display: block;
 				position: relative;
-				width: 100%;
+				/* width: 100%; */
 			}
 
 				.features article .image img {
