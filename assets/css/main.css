@@ -3846,6 +3846,16 @@ input, select, textarea {
 					width: 100%;
 				}
 
+            .wrapper.spotlight .image.selfie {
+                width: 40em;
+            }
+                .wrapper.spotlight .image.selfie img {
+					border-radius: 100%;
+					width: 100%;
+                    aspect-ratio: 1;
+                    object-fit: cover;
+				}
+
 			.wrapper.spotlight .content {
 				width: 100%;
 				-ms-flex: 2;
