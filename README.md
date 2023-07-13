@@ -2,7 +2,7 @@
 
 I'm David, welcome to my GitHub page:
 
-- 🔭 I’m currently working on [itinerator](https://github.com/dtannyc1/itinerator), an app that helps users plan activities for a day off
+- 🔭 I’m currently working on [Davescord](https://github.com/dtannyc1/Davescord), a clone of Discord
 - 💬 Ask me about Mechanical Engineering! While I don't work in the field anymore, I still love everything I learned about it
 - 👯 I’m looking to collaborate on your pet project. The goofier, the better.
 - 😄 Pronouns: He/Him
