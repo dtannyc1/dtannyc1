@@ -4042,9 +4042,9 @@ body.is-preload #banner p {
   width: 40em;
 }
 
-.wrapper.spotlight .image.selfie img {
-  border-radius: 100%;
+.wrapper.spotlight .image.selfie img{
   width: 100%;
+  border-radius: 100%;
   aspect-ratio: 1;
   object-fit: cover;
 }
@@ -4236,9 +4236,17 @@ body.is-preload #banner p {
   }
 
   .wrapper.spotlight .image {
-    margin: 0 0 1em 0 !important;
-    max-width: 85%;
-    width: 12em;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 100%;
+  }
+
+  .wrapper.spotlight .image.selfie {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 
 }
