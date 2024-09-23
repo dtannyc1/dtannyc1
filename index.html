@@ -416,16 +416,17 @@
 
   <script type="module">
     function loaderScript(scriptUrl){
-      let script = document.createElement('script');
       return new Promise(function (res, rej) {
+        let script = document.createElement('script');
         script.src = scriptUrl;
-        script.rel = "javascript";
+        script.type = 'text/javascript';
         script.onerror = rej;
         script.async = true;
         script.onload = res;
         script.addEventListener('error',rej);
         script.addEventListener('load',res);
-      }).then(() => document.head.appendChild(script) )
+        document.head.appendChild(script);
+      })
     }
 
     try {
