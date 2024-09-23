@@ -426,7 +426,7 @@
         script.onload = res;
         script.addEventListener('error',rej);
         script.addEventListener('load',res);
-        document.append(script);
+        document.body.appendChild(script);
       })
     }
 
