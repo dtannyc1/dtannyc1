@@ -435,13 +435,13 @@
       console.log('loaded localhost')
     } catch {
       try {
-        const el = document.head.getElementById('soopra-widget-script');
-        el.remove();
+        const el = document.getElementById('soopra-widget-script');
+        if (el) el.remove();
         await loaderScript("https://staging.app.soopra.ai/js/soopraWidget.js?username=david_tan")
         console.log('loaded staging')
       } catch{
-        const el = document.head.getElementById('soopra-widget-script');
-        el.remove();
+        const el = document.getElementById('soopra-widget-script');
+        if (el) el.remove();
         console.log('failed to load chat widget')
       }
     }
