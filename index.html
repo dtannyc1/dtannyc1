@@ -413,7 +413,35 @@
   <script src="assets/js/breakpoints.min.js"></script>
   <script src="assets/js/util.js"></script>
   <script src="assets/js/main.js"></script>
-  <script src="https://staging.app.soopra.ai/js/soopraWidget.js?username=david_tan" rel="javascript"></script>
+
+  <script>
+    function loaderScript(scriptUrl){
+      return new Promise(function (res, rej) {
+        let script = document.createElement('script');
+        script.src = scriptUrl;
+        script.type = 'text/javascript';
+        script.onerror = rej;
+        script.async = true;
+        script.onload = res;
+        script.addEventListener('error',rej);
+        script.addEventListener('load',res);
+        document.head.appendChild(script);
+      })
+    }
+
+    try {
+      await loaderScript("https://localhost:3000/js/soopraWidget.js?username=david_tan")
+      console.log('loaded localhost')
+    } catch {
+      try {
+        await loaderScript("https://staging.app.soopra.ai/js/soopraWidget.js?username=david_tan")
+        console.log('loaded staging')
+      } catch{
+        console.log('failed to load chat widget')
+      }
+    }
+  </script>
+  <!-- <script src="https://staging.app.soopra.ai/js/soopraWidget.js?username=david_tan" rel="javascript"></script> -->
 
 </body>
 
