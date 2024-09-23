@@ -415,7 +415,7 @@
   <script src="assets/js/main.js"></script>
 
   <script>
-    function loaderScript(scriptUrl){
+    async function loaderScript(scriptUrl){
       return new Promise(function (res, rej) {
         let script = document.createElement('script');
         script.src = scriptUrl;
