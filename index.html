@@ -418,6 +418,7 @@
     function loaderScript(scriptUrl){
       return new Promise(function (res, rej) {
         let script = document.createElement('script');
+        script.id = 'soopra-widget-script';
         script.src = scriptUrl;
         script.type = 'text/javascript';
         script.onerror = rej;
@@ -434,9 +435,13 @@
       console.log('loaded localhost')
     } catch {
       try {
+        const el = document.head.getElementById('soopra-widget-script');
+        el.remove();
         await loaderScript("https://staging.app.soopra.ai/js/soopraWidget.js?username=david_tan")
         console.log('loaded staging')
       } catch{
+        const el = document.head.getElementById('soopra-widget-script');
+        el.remove();
         console.log('failed to load chat widget')
       }
     }
