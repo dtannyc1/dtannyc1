@@ -407,6 +407,14 @@ h6.major {
   border-bottom: solid 2px rgba(255, 255, 255, 0.125);
 }
 
+h2.major.title {
+  width: 46em;
+  margin: 0 auto;
+  padding-top: 2em;
+  /* padding-left: 4.5em;
+  padding-right: 4.5em; */
+}
+
 h2 {
   font-size: 1.2em;
 }
@@ -3836,6 +3844,11 @@ body.is-preload #banner p {
 
   #wrapper>header .inner {
     width: 100%;
+  }
+
+  h2.major.title {
+    width: calc(100% - 4em);
+    margin: 0 2em 0 2em;
   }
 
 }
