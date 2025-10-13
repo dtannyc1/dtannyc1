@@ -3260,30 +3260,45 @@ button:disabled,
   }
 }
 
-@media screen and (max-width: 736px) {
+/* @media screen and (max-width: 736px) {
 
   .features article {
     width: calc(50% - 2em);
   }
 
-  /* .features article .image {
+  .features article .image {
 					margin-bottom: 1.5em;
 					margin-left: -1.5em;
 					margin-top: -1.5em;
 					width: calc(100% + 3em);
-				} */
+				}
 
-}
+} */
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 736px) {
 
-  .features {
-    display: block;
-  }
-
-  .features article {
+  .features article.education {
     width: 100% !important;
     margin: 0 0 2em 0 !important;
+  }
+
+  .features.skills article {
+    width: calc(50% - 2em);
+  }
+
+  .wrapper.spotlight .inner.project {
+    display: flex;
+    flex-direction: column !important;
+  }
+
+  .wrapper.spotlight .inner.project a {
+    width: 100%;
+    margin: 0 0 2em 0;
+  }
+
+  .wrapper.spotlight .inner.project .image.selfie {
+    width: 100%;
+    margin: 0 0 2em 0;
   }
 
 }
