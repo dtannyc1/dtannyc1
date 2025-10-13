@@ -407,6 +407,14 @@ h6.major {
   border-bottom: solid 2px rgba(255, 255, 255, 0.125);
 }
 
+h2.major.title {
+  width: 46em;
+  margin: 0 auto;
+  padding-top: 2em;
+  /* padding-left: 4.5em;
+  padding-right: 4.5em; */
+}
+
 h2 {
   font-size: 1.2em;
 }
@@ -3260,30 +3268,45 @@ button:disabled,
   }
 }
 
-@media screen and (max-width: 736px) {
+/* @media screen and (max-width: 736px) {
 
   .features article {
     width: calc(50% - 2em);
   }
 
-  /* .features article .image {
+  .features article .image {
 					margin-bottom: 1.5em;
 					margin-left: -1.5em;
 					margin-top: -1.5em;
 					width: calc(100% + 3em);
-				} */
+				}
 
-}
+} */
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 736px) {
 
-  .features {
-    display: block;
-  }
-
-  .features article {
+  .features article.education {
     width: 100% !important;
     margin: 0 0 2em 0 !important;
+  }
+
+  .features.skills article {
+    width: calc(50% - 2em);
+  }
+
+  .wrapper.spotlight .inner.project {
+    display: flex;
+    flex-direction: column !important;
+  }
+
+  .wrapper.spotlight .inner.project a {
+    width: 100%;
+    margin: 0 0 2em 0;
+  }
+
+  .wrapper.spotlight .inner.project .image.selfie {
+    width: 100%;
+    margin: 0 0 2em 0;
   }
 
 }
@@ -3821,6 +3844,11 @@ body.is-preload #banner p {
 
   #wrapper>header .inner {
     width: 100%;
+  }
+
+  h2.major.title {
+    width: calc(100% - 4em);
+    margin: 0 2em 0 2em;
   }
 
 }
